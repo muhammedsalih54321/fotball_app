@@ -1,5 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fotball_app/screens/splashscreen2.dart';
 
 class Splashscreen extends StatefulWidget {
@@ -22,7 +23,7 @@ class _SplashscreenState extends State<Splashscreen> {
         child: Column(
           children: [
             SizedBox(
-              height: 90,
+              height: 90.h,
             ),
             Stack(
               clipBehavior: Clip.none,
@@ -30,96 +31,96 @@ class _SplashscreenState extends State<Splashscreen> {
                 Padding(
                   padding: const EdgeInsets.only(left: 17),
                   child: Container(
-                    width: 360,
-                    height: 350,
+                    width: 360.w,
+                    height: 350.h,
                   ),
                 ),
                 Positioned(
-                  left: 50,
-                  top: 50,
+                  left: 50.w,
+                  top: 50.h,
                   child: Container(
-                    height: 290,
-                    width: 300,
+                    height: 290.h,
+                    width: 300.w,
                     decoration: BoxDecoration(
                       color: Color.fromARGB(30, 255, 255, 255),
-                      borderRadius: BorderRadius.all(Radius.circular(55)),
+                      borderRadius: BorderRadius.all(Radius.circular(55.r)),
                     ),
                   ),
                 ),
                 Positioned(
-                    left: 30,
-                    bottom: 10,
+                    left: 30.w,
+                    bottom: 10.h,
                     child: Image.asset(
                       'assets/images/img1.png',
-                      height: 355,
-                      width: 355,
+                      height: 355.h,
+                      width: 355.w,
                     )),
                 Positioned(
-                    left: 70,
+                    left: 70.w,
                     child: CircleAvatar(
-                        radius: 12, backgroundColor: Colors.white)),
+                        radius: 10.r, backgroundColor: Colors.white)),
                 Positioned(
-                    top: 320,
-                    left: 60,
+                    top: 320.h,
+                    left: 60.w,
                     child: CircleAvatar(
-                        radius: 11, backgroundColor: Colors.white)),
+                        radius: 11.r, backgroundColor: Colors.white)),
                 Positioned(
-                    top: 220,
-                    left: 336,
+                    top: 220.h,
+                    left: 336.w,
                     child: CircleAvatar(
-                      radius: 15,
+                      radius: 15.r,
                       backgroundColor: Color.fromARGB(255, 52, 0, 242),
                     ))
               ],
             ),
             SizedBox(
-              height: 50,
+              height: 40.h,
             ),
             Row(
               children: [
                 SizedBox(
-                  width: 40,
+                  width: 40.w,
                 ),
                 Text(
                   'Discover all\nabout sports',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 42,
+                      fontSize: 40.sp,
                       fontWeight: FontWeight.w500),
                 )
               ],
             ),
             SizedBox(
-              height: 20,
+              height: 15.h,
             ),
             Row(
               children: [
                 SizedBox(
-                  width: 40,
+                  width: 40.w,
                 ),
                 Text(
                   'Search millions of jobs and get the\ninside scoop on companies.\nWait for what? Let’s get start it!',
                   style: TextStyle(
                       color: Colors.grey,
-                      fontSize: 16,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400),
                 )
               ],
             ),
             SizedBox(
-              height: 40,
+              height: 30.h,
             ),
             Row(
               children: [
                 SizedBox(
-                  width: 40,
+                  width: 40.w,
                 ),
                 Container(
                   padding:
-                      EdgeInsets.only(right: 70, left: 70, top: 10, bottom: 10),
+                      EdgeInsets.only(right: 70.w, left: 70.w, top: 10.h, bottom: 10.h),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 78, 50, 234),
-                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    borderRadius: BorderRadius.all(Radius.circular(15.r)),
                   ),
                   child: TextButton(
                       onPressed: () {
@@ -127,8 +128,8 @@ class _SplashscreenState extends State<Splashscreen> {
                           backgroundColor: Color.fromARGB(255, 53, 49, 73),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(30),
-                            topRight: Radius.circular(30),
+                            topLeft: Radius.circular(30.r),
+                            topRight: Radius.circular(30.r),
                           )),
                           context: context,
                           builder: (BuildContext context) {
@@ -136,7 +137,7 @@ class _SplashscreenState extends State<Splashscreen> {
                               child: Column(
                                 children: [
                                   SizedBox(
-                                    height: 20,
+                                    height: 20.h,
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
@@ -147,22 +148,22 @@ class _SplashscreenState extends State<Splashscreen> {
                                           'Welcome',
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 27,
+                                              fontSize: 27.r,
                                               fontWeight: FontWeight.w500),
                                         )
                                       ],
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 20,
+                                    height: 20.h,
                                   ),
                                   Container(
-                                    width: 350,
-                                    height: 70,
+                                    width: 350.w,
+                                    height: 70.h,
                                     decoration: BoxDecoration(
                                       color: Color.fromARGB(255, 35, 35, 45),
                                       borderRadius:
-                                          BorderRadius.all(Radius.circular(13)),
+                                          BorderRadius.all(Radius.circular(13.r)),
                                     ),
                                     child: Padding(
                                       padding: const EdgeInsets.all(8.0),
@@ -170,7 +171,7 @@ class _SplashscreenState extends State<Splashscreen> {
                                         decoration: InputDecoration(
                                             hintText: 'Email',
                                             hintStyle: TextStyle(
-                                                fontSize: 17,
+                                                fontSize: 17.sp,
                                                 color: Colors.grey),
                                             prefixIcon: Icon(
                                               Icons.mail_outlined,
@@ -182,11 +183,11 @@ class _SplashscreenState extends State<Splashscreen> {
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 20,
+                                    height: 20.h,
                                   ),
                                   Container(
-                                    width: 350,
-                                    height: 70,
+                                    width: 350.w,
+                                    height: 70.h,
                                     decoration: BoxDecoration(
                                       color: Color.fromARGB(255, 35, 35, 45),
                                       borderRadius:
@@ -198,23 +199,13 @@ class _SplashscreenState extends State<Splashscreen> {
                                         decoration: InputDecoration(
                                             hintText: 'Password',
                                             hintStyle: TextStyle(
-                                                fontSize: 17,
+                                                fontSize: 17.sp,
                                                 color: Colors.grey),
                                             prefixIcon: Icon(
                                               Icons.key,
                                               color: Colors.grey,
                                             ),
-                                            suffixIcon: GestureDetector(
-                                              onTap: () {
-                                                setState(() {
-                                                  _obsercuretext =
-                                                      !_obsercuretext;
-                                                });
-                                              },
-                                              child: Icon(_obsercuretext
-                                                  ? Icons.visibility
-                                                  : Icons.visibility_off),
-                                            ),
+                                            suffixIcon:isshowing(),
                                             border: InputBorder.none),
                                         obscureText: _obsercuretext,
                                         style: TextStyle(color: Colors.white),
@@ -222,48 +213,49 @@ class _SplashscreenState extends State<Splashscreen> {
                                     ),
                                   ),
                                   SizedBox(
-                                    height: 15,
+                                    height: 15.h,
                                   ),
                                   Row(
                                     children: [
                                       SizedBox(
-                                        width: 20,
+                                        width: 20.w,
                                       ),
                                       Checkbox(
                                           value: ischecked,
-                                          onChanged: (newvalue) {
+                                          
+                                          onChanged: (val) {
                                             setState(() {
-                                              ischecked = newvalue;
+                                              ischecked = val;
                                             });
                                           }),
                                       Text(
                                         'Remember me',
                                         style: TextStyle(
-                                            fontSize: 15, color: Colors.grey),
+                                            fontSize: 15.sp, color: Colors.grey),
                                       ),
                                       SizedBox(
-                                        width: 80,
+                                        width: 80.w,
                                       ),
                                       Text(
                                         'Forgot Password',
                                         style: TextStyle(
-                                            fontSize: 15, color: Colors.white),
+                                            fontSize: 15.sp, color: Colors.white),
                                       )
                                     ],
                                   ),
                                   SizedBox(
-                                    height: 20,
+                                    height: 20.h,
                                   ),
                                   Container(
                                     padding: EdgeInsets.only(
-                                        right: 130,
-                                        left: 130,
-                                        top: 10,
-                                        bottom: 10),
+                                        right: 130.w,
+                                        left: 130.w,
+                                        top: 10.h,
+                                        bottom: 10.h),
                                     decoration: BoxDecoration(
                                       color: Color.fromARGB(255, 78, 50, 234),
                                       borderRadius:
-                                          BorderRadius.all(Radius.circular(15)),
+                                          BorderRadius.all(Radius.circular(15.r)),
                                     ),
                                     child: TextButton(
                                         onPressed: () {
@@ -277,23 +269,23 @@ class _SplashscreenState extends State<Splashscreen> {
                                           'Sign in',
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 18),
+                                              fontSize: 18.sp),
                                         )),
                                   ),
                                   SizedBox(
-                                    height: 13,
+                                    height: 13.h,
                                   ),
                                   Row(
                                     children: [
                                       SizedBox(
-                                        width: 90,
+                                        width: 90.w,
                                       ),
                                       Text(
                                         'Don\'t have account?',
                                         style: TextStyle(
                                             color: const Color.fromARGB(
                                                 255, 193, 190, 190),
-                                            fontSize: 16),
+                                            fontSize: 16.sp),
                                       ),
                                       Text(
                                         'Sign up',
@@ -312,17 +304,17 @@ class _SplashscreenState extends State<Splashscreen> {
                       },
                       child: Text(
                         'Sign in',
-                        style: TextStyle(color: Colors.white, fontSize: 18),
+                        style: TextStyle(color: Colors.white, fontSize: 18.sp),
                       )),
                 ),
                 SizedBox(
-                  width: 40,
+                  width: 40.w,
                 ),
                 Text(
                   'Sign up',
                   style: TextStyle(
                       color: const Color.fromARGB(255, 193, 190, 190),
-                      fontSize: 18),
+                      fontSize: 18.sp),
                 )
               ],
             ),
@@ -331,4 +323,13 @@ class _SplashscreenState extends State<Splashscreen> {
       ),
     );
   }
+  Widget isshowing(){
+  return IconButton(onPressed: (){
+     setState(() {
+                                                  _obsercuretext =
+                                                      !_obsercuretext;
+                                                });
+  }, icon: _obsercuretext?Icon(Icons.visibility):Icon(Icons.visibility_off));
 }
+}
+
